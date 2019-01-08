@@ -1,0 +1,10 @@
+{
+  "name" : "simple-file-db",
+  "version": "1.0.0",
+  "description": "Simple file based data store in nodejs. Data is stored as json files.",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 10.15.0",
+    "npm": ">= 6.4.0"
+  }
+}
