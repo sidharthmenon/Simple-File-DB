@@ -1,5 +1,5 @@
 # Simple-File-DB
-Simple file based data store in nodejs. Data is stored as json files.
+Simple file based database in nodejs. Data is stored as json files.
 
 |SQL|FileDB|
 |---|---|
