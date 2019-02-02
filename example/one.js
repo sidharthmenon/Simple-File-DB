@@ -1,22 +1,27 @@
-var db = require('../index');
+var db = require('../');
 
-var users = new db.table("users");
+async function test(){
+  var database = new db();
 
-// users.insert({name: "John Doe", age: "25", email: "john@example.com"}, function(err, item){
-//   console.log(item);
-// })
+  // var user = await database.collection("users").get();
+  // user.forEach(doc => {
+  //   console.log(doc.data, doc.id);
+  // });
 
-// users.insert({name: "Jane Doe", age: "24", email: "jane@example.com"}, function(err, item){
-//   console.log(item);
-// })
+  // var user = await database.collection("users").where("name", "==", "sidharth").where("age", "==", 25).get();  
+  // console.log(user);
+  // var user = await database.collection("users").where("name", "==", "sidharth").get();
+  // console.log(user);
 
-// users.where("name", "=", "Jane", function(err, items){
-//   console.log(items);
-//   items[0].data.age = 28;
-//   items[0].data.email = "jane@live.com";
-//   items[0].save();
-// });
+  // var user = await database.collection("users").add({name: "sidharth", age: 25});
+  // console.log(user.id);
 
-// users.where("name", "=", ["Jane", "John"], function(err, items){
-//   console.log(items);
-// })s
+  // var user = await database.collection("users").doc('sidharth').set({test:"sree"}, {merge: true});
+  // console.log(user);
+
+  // var user = await database.collection("users").doc('sidharth').get();
+  // console.log(user);
+  
+}
+
+test();
